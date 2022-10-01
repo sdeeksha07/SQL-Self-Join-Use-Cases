@@ -1,0 +1,18 @@
+--creating table friends
+
+create table friends
+(firstname varchar(20),
+lastname varchar(20))
+
+----inserting values into friends table
+insert into friends values('shipra','singh');
+insert into friends values('anubhav','singh');
+insert into friends values('aishwarya','singh');
+insert into friends values  ('deeksha','singh');
+insert into friends values ('gaurav','sonakiya');
+insert into friends values ('rushabh','shakhalikar');
+insert into friends values ('shaniv','tiwari');
+insert into friends values ('parul','martin');
+insert into friends values ('abhinav','Aggrawal');
+insert into friends values ('Vibha','Barnwal');
+
