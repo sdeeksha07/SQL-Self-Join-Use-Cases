@@ -1,0 +1,76 @@
+--create table1
+create table table1
+(id int)
+
+insert into table1 values (1);
+insert into table1 values (1);
+insert into table1 values (1);
+insert into table1 values (2);
+insert into table1 values (2);
+insert into table1 values (3);
+insert into table1 values (4);
+insert into table1 values (4);
+insert into table1 values (NULL)
+
+
+--create table2
+create table table2
+(id int)
+
+insert into table2 values (1);
+insert into table2 values (1);
+insert into table2 values (2);
+insert into table2 values (NULL);
+insert into table2 values (NULL);
+insert into table2 values (4);
+insert into table2 values (4);
+insert into table2 values (2);
+insert into table2 values (NULL)ABORT
+
+
+create table table3
+(id_1 int)
+
+insert into table3 values (1);
+insert into table3 values (2);
+
+--inner join
+select table1.*,table2.*
+from table1
+inner join table2
+on table2.id = table1.id
+
+--left join
+select table1.*,table2.*
+from table1
+left join table2
+on table2.id = table1.id
+
+--right join
+select table1.*,table2.*
+from table1
+right join table2
+on table2.id = table1.id
+
+--cross join
+select table1.*,table2.*
+from table1
+cross join table2
+--full outer join
+select table1.*,table2.*
+from table1
+full join table2
+on table2.id = table1.id
+
+--natural join with same column name
+select table1.*,table2.*
+from table1
+natural join table2
+
+select * from table3
+
+--natural join with differnt column names
+select table1.*,table3.*
+from table1
+natural join table3
+
